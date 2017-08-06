@@ -1,0 +1,3 @@
+## lazy-val 
+
+Lazy value.
