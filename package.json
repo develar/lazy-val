@@ -1,0 +1,36 @@
+{
+  "name": "read-config-file",
+  "version": "1.0.0",
+  "main": "out/main.js",
+  "author": "Vladimir Krivosheev",
+  "license": "MIT",
+  "repository": "develar/read-config-file",
+  "bugs": "https://github.com/develar/read-config-file/issues",
+  "homepage": "https://github.com/develar/read-config-file",
+  "files": [
+    "out"
+  ],
+  "scripts": {
+    "compile": "ts-babel",
+    "release": "yarn compile && npm publish"
+  },
+  "dependencies": {
+    "bluebird-lst": "^1.0.2",
+    "fs-extra-p": "^4.4.0",
+    "js-yaml": "^3.9.1",
+    "json5": "^0.5.1"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^3.9.0",
+    "@types/node": "^8.0.19",
+    "babel-preset-ts-node4-bluebird": "^0.1.0",
+    "ts-babel": "^3.1.4",
+    "typescript": "^2.4.2"
+  },
+  "babel": {
+    "presets": [
+      "babel-preset-ts-node4-bluebird"
+    ]
+  },
+  "typings": "./out/read-config-file.d.ts"
+}
