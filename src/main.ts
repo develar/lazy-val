@@ -6,6 +6,10 @@ export class Lazy<T> {
     this.creator = creator
   }
 
+  get hasValue() {
+    return this.creator == null
+  }
+
   get value(): Promise<T> {
     if (this.creator == null) {
       return this._value
