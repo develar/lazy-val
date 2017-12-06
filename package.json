@@ -1,6 +1,6 @@
 {
   "name": "lazy-val",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "out/main.js",
   "author": "Vladimir Krivosheev",
   "license": "MIT",
@@ -15,13 +15,13 @@
     "release": "yarn compile && npm publish"
   },
   "devDependencies": {
-    "babel-preset-ts-node4-bluebird": "^0.1.0",
-    "ts-babel": "^3.2.0",
-    "typescript": "^2.4.2"
+    "babel-preset-ts-node6-bluebird": "^1.0.1",
+    "ts-babel": "^4.1.8",
+    "typescript": "^2.6.2"
   },
   "babel": {
     "presets": [
-      "babel-preset-ts-node4-bluebird"
+      "babel-preset-ts-node6-bluebird"
     ]
   },
   "typings": "./out/main.d.ts"
