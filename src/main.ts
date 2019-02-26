@@ -1,5 +1,5 @@
 export class Lazy<T> {
-  private _value: Promise<T>
+  private _value: Promise<T> | null = null
   private creator: (() => Promise<T>) | null
 
   constructor(creator: () => Promise<T>) {
@@ -12,11 +12,12 @@ export class Lazy<T> {
 
   get value(): Promise<T> {
     if (this.creator == null) {
-      return this._value
+      return this._value!!
     }
 
-    this.value = this.creator()
-    return this._value
+    const result = this.creator()
+    this.value = result
+    return result
   }
 
   set value(value: Promise<T>) {
