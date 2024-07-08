@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "compile": "tsc",
+    "test": "tsc && node ./test/main.js",
     "release": "pnpm compile && pnpm publish"
   },
   "devDependencies": {
